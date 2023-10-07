@@ -9,121 +9,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <header id="header">
-        <div id="background_content">
-            <div id="gradient">
-                <img src="img/rectangle.svg" alt="background">
-            </div>
-        </div>
-        <div id="desktop_hero">
-            <div class="container">
-                <div class="text_content">
-                    <h1>Lawyer</h1>
-                    <h4>Tetiana Kolomiiets</h4>
-                </div>
-            </div>
-            <div class="container">
-                <button id="big_button">Sign up for a consultation</button>
-            </div>
-        </div>
-    </header>
-
-    <nav id="desktop_navbar">
-        <ul class="desktop_menu">
-            <li class="navigation_content"><a href="#">Home</a></li>
-            <li class="navigation_content"><a href="#">Product</a></li>
-            <li class="navigation_content"><a href="#">Pricing</a></li>
-            <li class="navigation_content"><a href="#">About</a></li>
-            <li class="navigation_content"><a href="#">Contact</a></li>
-        </ul>
-        <div class="center">
-            <div id="content_logo_dark">
-                <div>
-                    <img src="img/icon.png" alt="Logo">
-                </div>
-            </div>
-        </div>
-        <div class="right">
-            <div class="desktop_actions">
-                <div class= "social_media">
-                    <a href="#">
-                        <i class="fa fa-facebook-square" style="font-size:36px"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa fa-linkedin-square" style="font-size:36px"></i>
-                    </a>                    
-                    <a href="#">
-                        <i class="fa fa-telegram" style="font-size:36px"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </nav>
+    <nav data-include="html/index.nav.html"></nav>
+    <header data-include="html/index.header.html"></header>
     <main id="main">
-        <div class="text_content">
-            <h2>Features</h2>
-            <h4>Most calendars are designed for teams. 
-                Slate is designed for freelancers</h4>
-        </div>
-        <div id="row">
-            <div id="first_part">
-                <i class="fa fa-connectdevelop" style="font-size:36px"></i>
-                <h3>OpenType features 
-                    Variable fonts</h3>
-                <p>Slate helps you see how 
-                    many more days you need 
-                    to work to reach your 
-                    financial goal.</p>
-            </div>
-            <div id="second_part">
-                <i class="fa fa-book" style="font-size:36px"></i>
-                <h3>Design with real data</h3>
-                <p>Slate helps you see how 
-                    many more days you need 
-                    to work to reach your 
-                    financial goal.</p>
-            </div>
-            <div id="third_part">
-                <i class="fa fa-hourglass-2" style="font-size:36px"></i>
-                <h3>Fastest way to take action</h3>
-                <p>Slate helps you see how 
-                    many more days you need 
-                    to work to reach your 
-                    financial goal.</p>
-            </div>
-        </div>
-        <div id="screen_content">
-            <video width="320" height="240" controls>
-                <source src="#" type="video/mp4">
-                <source src="#" type="video/ogg">
-                Your browser does not support the video tag.
-              </video>
-        </div>
-        <div>
-            <div class="frame">
-                <h2>Fastest way to organize</h2>
-                <p>Most calendars are designed for teams. Slate is designed for freelancers</p>
-                <button>Try for free</button>
-            </div>
-            <div class="frame">
-                <img src="img/desktop.jpg" alt="desktop">
-            </div>
-        </div>
+        <section data-include="html/index.about-me.partial.html"></section>
+        <section data-include="html/index.services.partial.html"></section>
+        <section data-include="html/index.cases.partial.html"></section>
+        <section data-include="html/index.contacts.partial.html"></section>
     </main>
-    <footer>
-        <div id="footer_content">
-            <div id="footer_menu">
-                <h3>Pages</h3>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Product</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
+    <footer data-include="html/index.footer.html"></footer>
     <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
 </body>
 </html>
