@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-color: rgb(255, 255, 255);
+    --text-color-alternative: rgb(225, 221, 232);
+    --background-color: black;
+    --background-color-violet: rgb(50, 38, 75);
+    scroll-behavior: smooth;
+    text-align: center;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+img {
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+

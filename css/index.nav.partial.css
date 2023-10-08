@@ -1,0 +1,38 @@
+#desktop_navbar {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    text-align: center;
+    background-color: inherit;
+}
+
+.navigation_content {
+    flex: 20%;
+}
+
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: var(--background-color-violet);
+  }
+/*.content_logo{
+    flex: 5%;
+    width: 50px;
+    height: 50px;
+}*/
