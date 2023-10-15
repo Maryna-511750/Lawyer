@@ -1,38 +1,141 @@
-#desktop_navbar {
-    height: 50px;
-    display: flex;
-    flex-direction: row;
-    font-size: 20px;
-    text-align: center;
-    background-color: inherit;
+.navigation_wrapper {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--background-color);
+    z-index: 2;
+    transition: top 0.3s ease-in;
+    padding: 15px 24px 50px 24px;
+    transition: top 0.3s ease-in 0.1s;
+    overflow: hidden;
+    margin: auto;
+}
+
+.navigation_wrapper.active {
+    right: 0;
 }
 
 .navigation_content {
-    flex: 20%;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin: 30px auto;
 }
 
-nav ul {
-    list-style-type: none;
-    overflow: hidden;
-}
-
-nav li {
-    float: left;
-}
-
-nav li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
+.navigation_content a,
+.social_media a,
+.social_media i {
+    font-size: 22px;
+    color: var(--text-color);
     text-decoration: none;
+    padding: 15px;
+    margin: auto;
 }
 
-nav li a:hover {
-    background-color: var(--background-color-violet);
-  }
-/*.content_logo{
-    flex: 5%;
-    width: 50px;
-    height: 50px;
-}*/
+.navigation_content a:hover {
+    color: pink;
+    border-bottom: 2px solid pink;
+}
+
+nav .nav_burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    padding: 12px;
+    cursor: pointer;
+    margin: 10px auto;
+    z-index: 5;
+}
+
+nav .nav_burger span,
+nav .nav_burger::before,
+nav .nav_burger::after {
+    position: absolute;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: var(--text-color);
+    transition: all 1.5s ease-in-out;
+}
+nav .nav_burger span {
+    transform: scale(1);
+}
+nav .nav_burger::before,
+nav .nav_burger::after {
+    content: "";
+}
+
+nav .nav_burger::before {
+    top: 0;
+}
+nav .nav_burger::after {
+    bottom: 0;
+}
+
+nav .nav_burger.active span {
+    transform: scale(0);
+}
+nav .nav_burger.active::before {
+    top: 50%;
+    transform: rotate(-225deg);
+}
+nav .nav_burger.active::after {
+    bottom: 40%;
+    transform: rotate(225deg);
+}
+
+@media (min-width: 991px) {
+
+    #desktop_navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        /*padding-top: 40px;*/
+    }
+
+    nav .nav_burger {
+        display: none;
+    }
+  
+    .navigation_content,
+    .social_media {
+        display: flex;
+    }
+    
+    .navigation_wrapper {
+        position: relative;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 75%;
+        height: auto;
+        padding: 0;
+    }
+
+    .navigation_content {
+        min-width: 480px;
+        flex-direction: row;
+        justify-content: space-around;
+        height: auto;
+        margin: 0;
+    }
+    .navigation_content a
+    .social_media a,
+    .social_media i {
+        position: relative;
+        font-size: 0.91rem;
+        /*font-weight: 700;*/
+        text-decoration: none;
+        line-height: 1.5rem;
+    }
+
+    .social_media {
+        min-width: 150px;
+        display: flex;
+        justify-content: space-around;
+    }
+}
