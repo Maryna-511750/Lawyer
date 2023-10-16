@@ -16,10 +16,14 @@
     --text-color-alternative: rgb(225, 221, 232);
     --background-color: black;
     --background-color-violet: rgb(50, 38, 75);
+    --color-warm: pink;
+    --font-jura: 'Jura', sans-serif;
+    --font-sofia: 'Sofia Sans', sans-serif;
+    --font-vollkorn: 'Vollkorn SC', serif;
     scroll-behavior: smooth;
-    text-align: center;
     background-color: var(--background-color);
     color: var(--text-color);
+    font-family: var(--font-vollkorn);
 }
 
 img {
@@ -28,6 +32,19 @@ img {
     margin: auto;
 }
 
+.container {
+    max-width: 1200px;
+    margin:auto;
+}
+
 a {
     text-decoration: none;
+}
+
+h2,
+h3,
+a,
+button {
+    font-family: var(--font-sofia);
+    text-align: center;
 }

@@ -1,28 +1,30 @@
 .header_content {
-    padding: 100px 0 130px 0;
+  padding: 100px 0 130px 0;
+  text-align: center;
 }
 
 .header_text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .header_text h1 {
-    /*font-family: var(--additional-font);*/
-    font-size: 2.52rem;
-    line-height: 66px;
-    max-width: 332px;
-    height: auto;
-    margin: auto;
+  font-family: var(--font-jura);
+  font-size: 2.52rem;
+  line-height: 66px;
+  max-width: 332px;
+  height: auto;
+  margin: auto;
 }
 
 .header_text p {
-    font-size: 1rem;
-    line-height: 1.55rem;
-    margin-bottom: 40px;
-    height: auto;
-    letter-spacing: normal;
+  font-family: var(--font-sofia);
+  font-size: 1rem;
+  line-height: 1.55rem;
+  margin-bottom: 40px;
+  height: auto;
+  letter-spacing: normal;
 }
 
 /*.button_background {
@@ -42,11 +44,11 @@
 }*/
 
 .header_content_button {
-    position: relative;
-    border: 2px solid var(--text-color);
-    color: var(--text-color);
-    padding: 0.75rem;
-    
+  font-family: var(--font-sofia);
+  position: relative;
+  border: 2px solid var(--text-color);
+  color: var(--text-color);
+  padding: 0.75rem;
 }
 
 @media (min-width: 381px) {
@@ -154,15 +156,15 @@
     }
   
     section div .header_text {
-        width: 50%;
+      width: 50%;
     }
     div .header_text h1 {
-        font-size: 5.3rem;
-        line-height: 5.82rem;
-        margin-top: 0;
-        width: 100%;
+      font-size: 5.3rem;
+      line-height: 5.82rem;
+      margin-top: 0;
+      width: 100%;
     }
     div .header_text p {
-        font-size: 1.11rem;
+      font-size: 1.11rem;
     }
   }

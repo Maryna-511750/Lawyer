@@ -34,8 +34,8 @@
 }
 
 .navigation_content a:hover {
-    color: pink;
-    border-bottom: 2px solid pink;
+    color: var(--color-warm);
+    border-bottom: 2px solid var(--color-warm);
 }
 
 nav .nav_burger {

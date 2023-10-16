@@ -1,3 +1,4 @@
 @import url(global.css);
-@import url(index.header.partial.css);
-@import url(index.nav.partial.css);
+@import url(index.header.css);
+@import url(index.nav.css);
+@import url(index.about-me.css);
