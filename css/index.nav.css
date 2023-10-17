@@ -38,7 +38,7 @@
     border-bottom: 2px solid var(--color-warm);
 }
 
-nav .nav_burger {
+nav .navigation_burger {
     display: block;
     position: relative;
     width: 30px;
@@ -49,9 +49,9 @@ nav .nav_burger {
     z-index: 5;
 }
 
-nav .nav_burger span,
-nav .nav_burger::before,
-nav .nav_burger::after {
+nav .navigation_burger span,
+nav .navigation_burger::before,
+nav .navigation_burger::after {
     position: absolute;
     left: 0;
     height: 2px;
@@ -59,32 +59,37 @@ nav .nav_burger::after {
     background-color: var(--text-color);
     transition: all 1.5s ease-in-out;
 }
-nav .nav_burger span {
+nav .navigation_burger span {
     transform: scale(1);
 }
-nav .nav_burger::before,
-nav .nav_burger::after {
+nav .navigation_burger::before,
+nav .navigation_burger::after {
     content: "";
 }
 
-nav .nav_burger::before {
+nav .navigation_burger::before {
     top: 0;
 }
-nav .nav_burger::after {
+nav .navigation_burger::after {
     bottom: 0;
 }
 
-nav .nav_burger.active span {
+nav .navigation_burger.active span {
     transform: scale(0);
 }
-nav .nav_burger.active::before {
+nav .navigation_burger.active::before {
     top: 50%;
     transform: rotate(-225deg);
 }
-nav .nav_burger.active::after {
+nav .navigation_burger.active::after {
     bottom: 40%;
     transform: rotate(225deg);
 }
+
+.lock {
+    overflow: hidden;
+}
+
 
 @media (min-width: 991px) {
 
@@ -95,7 +100,7 @@ nav .nav_burger.active::after {
         /*padding-top: 40px;*/
     }
 
-    nav .nav_burger {
+    nav .navigation_burger {
         display: none;
     }
   
