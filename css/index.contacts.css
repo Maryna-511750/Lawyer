@@ -1,0 +1,53 @@
+#contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contacts-form,
+.contacts-text {
+    margin: 24px;
+    text-align: left;
+}
+
+.contacts-text p,
+.contacts-text h2,
+.contacts-text h3 {
+    margin-bottom: 18px;
+}
+
+.contacts-form input[type=text], 
+.contacts-form input[type=tel],
+.contacts-form input[type=email],
+.contacts-form textarea {
+    width: 100%;
+    padding: 12px;
+    resize: vertical;
+    margin-bottom: 24px;
+    border: none;
+    border-bottom: 2px solid var(--text-color);
+    background-color: inherit;
+}
+
+.contacts-form input[type=submit] {
+    background-color: inherit;
+    font-family: var(--font-sofia);
+    position: relative;
+    border: 2px solid var(--text-color);
+    color: var(--text-color);
+    padding: 0.75rem;
+}
+
+@media (min-width: 774px) {
+
+    #contacts {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .contacts-form{
+        flex: 1;
+    }
+    .contacts-text {
+        flex: 1;
+    }
+}
