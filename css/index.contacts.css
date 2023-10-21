@@ -27,7 +27,7 @@
 .contacts-form input[type=text]:focus, 
 .contacts-form input[type=tel]:focus,
 .contacts-form input[type=email]:focus,
-.contacts-form textarea::after {
+.contacts-form textarea:focus {
     border: none;
     border-bottom: 2px solid var(--color-warm);
     background-color: inherit;

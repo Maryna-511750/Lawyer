@@ -51,6 +51,11 @@
   padding: 0.75rem;
 }
 
+.header_content_button:hover {
+  border: 2px solid var(--color-warm);
+  color: var(--color-warm);
+}
+
 @media (min-width: 381px) {
     .container-top,
     .container-section {

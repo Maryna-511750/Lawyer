@@ -1,0 +1,62 @@
+.services-carousel-container {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .services-carousel {
+    flex: 8;
+    list-style: none;
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .services-carousel-item {
+    flex: 0 0 100%;
+    margin-right: 10px; 
+    text-align: center;
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+  }
+
+  /*.services-carousel-item div {
+    text-align: center;
+    width: 80%;
+    display: block;
+    border: 2px solid var(--text-color);
+  }*/
+  
+  .services-carousel-nav {
+    margin-top: 10px; 
+    text-align: center;
+  }
+  
+  .prev-button,
+  .next-button {
+    padding: 5px 10px;
+    background-color: inherit; 
+    color:var(--text-color); 
+    border: none;
+    cursor: pointer;
+    flex: 1;
+  }
+  
+  .prev-button:hover,
+  .next-button:hover {
+    background-color: #555; 
+  }
+  
+  
+  .prev-button {
+    float: left;
+  }
+  
+  .next-button {
+    float: right;
+  }
+  

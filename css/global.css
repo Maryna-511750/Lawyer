@@ -52,7 +52,8 @@ button {
 
 #about-me,
 #contacts,
-#cases {
+#cases,
+#footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
