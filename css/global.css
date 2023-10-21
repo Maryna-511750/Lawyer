@@ -49,3 +49,11 @@ button {
     font-family: var(--font-sofia);
     text-align: center;
 }
+
+#about-me,
+#contacts,
+#cases {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

@@ -1,8 +1,4 @@
-#contacts {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+
 .contacts-form,
 .contacts-text {
     margin: 24px;
@@ -28,6 +24,16 @@
     background-color: inherit;
 }
 
+.contacts-form input[type=text]:focus, 
+.contacts-form input[type=tel]:focus,
+.contacts-form input[type=email]:focus,
+.contacts-form textarea::after {
+    border: none;
+    border-bottom: 2px solid var(--color-warm);
+    background-color: inherit;
+    color: var(--text-color);
+}
+
 .contacts-form input[type=submit] {
     background-color: inherit;
     font-family: var(--font-sofia);
@@ -37,6 +43,7 @@
     padding: 0.75rem;
 }
 
+
 @media (min-width: 774px) {
 
     #contacts {
@@ -44,6 +51,7 @@
         flex-direction: row;
         justify-content: space-between;
     }
+
     .contacts-form{
         flex: 1;
     }
