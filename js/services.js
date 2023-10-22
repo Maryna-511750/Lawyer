@@ -34,39 +34,31 @@
     prevButton.addEventListener('click', moveToPrev);
     nextButton.addEventListener('click', moveToNext);
 });*/
-const carousel = document.querySelector('.services-carousel');
-  const prevButton = document.querySelector('.prev-button');
-  const nextButton = document.querySelector('.next-button');
+const servicesCarousel = document.querySelector('.services-carousel');
+    const prevButton = document.querySelector('.prev-button');
+    const nextButton = document.querySelector('.next-button');
+    const slideWidth = servicesCarousel.querySelector('.services-carousel-item').offsetWidth;
+    let currentPosition = 0;
 
-  
-  const itemWidth = carousel.querySelector('.services-carousel-item').offsetWidth;
-
- 
-  let currentPosition = 0;
-
-  
-  function moveToNext() {
-    currentPosition += itemWidth;
-    if (currentPosition > 0) {
-      currentPosition = -(itemWidth * (carousel.children.length - 1));
+    function moveToNext() {
+        currentPosition += slideWidth;
+        if (currentPosition > 0) {
+            currentPosition = -(slideWidth * (servicesCarousel.children.length - 1));
+        }
+        updateCarouselPosition();
     }
-    updateCarouselPosition();
-  }
 
-  
-  function moveToPrev() {
-    currentPosition -= itemWidth;
-    if (currentPosition < -(itemWidth * (carousel.children.length - 1))) {
-      currentPosition = 0;
+    function moveToPrev() {
+        currentPosition -= slideWidth;
+        if (currentPosition < -(slideWidth * (servicesCarousel.children.length - 1))) {
+            currentPosition = 0;
+        }
+        updateCarouselPosition();
     }
-    updateCarouselPosition();
-  }
 
- 
-  function updateCarouselPosition() {
-    carousel.style.transform = `translateX(${currentPosition}px)`;
-  }
+    function updateCarouselPosition() {
+        servicesCarousel.style.transform = `translateX(${currentPosition}px)`;
+    }
 
- 
-  prevButton.addEventListener('click', moveToPrev);
-  nextButton.addEventListener('click', moveToNext);
+    prevButton.addEventListener('click', moveToPrev);
+    nextButton.addEventListener('click', moveToNext);

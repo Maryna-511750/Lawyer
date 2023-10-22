@@ -21,7 +21,7 @@
     display: flex;
     flex-direction: column;
     max-width: 100%;
-    margin: 30px auto;
+    margin: 50px auto;
 }
 
 .navigation_content a,

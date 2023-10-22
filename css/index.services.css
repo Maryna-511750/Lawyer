@@ -16,7 +16,7 @@
   }
   
   .services-carousel-item {
-    flex: 0 0 100%;
+    flex: 0 0 calc(100% - 10px);
     margin-right: 10px; 
     text-align: center;
     /*display: flex;
@@ -49,14 +49,5 @@
   .prev-button:hover,
   .next-button:hover {
     background-color: #555; 
-  }
-  
-  
-  .prev-button {
-    float: left;
-  }
-  
-  .next-button {
-    float: right;
   }
   
