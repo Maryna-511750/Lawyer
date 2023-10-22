@@ -1,4 +1,4 @@
-#about-me h2{
+#about-me h2 {
     margin: 20px auto;
 }
 
@@ -14,19 +14,17 @@
 }
 
 .about-me-text {
-    
     padding: 30px;
 }
 
 @media (min-width: 774px) {
-    
     .about-me-content {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
 
-    .about-me-photo{
+    .about-me-photo {
         flex: 1;
     }
     .about-me-text {
@@ -35,7 +33,7 @@
 }
 
 @media (min-width: 991px) {
-    .about-me-photo{
+    .about-me-photo {
         flex: 1;
     }
     .about-me-text {

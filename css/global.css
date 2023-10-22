@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@600&family=Sofia+Sans:wght@200&family=Vollkorn+SC&display=swap');
 /*
-    font-family: 'Jura', sans-serif;
-    font-family: 'Sofia Sans', sans-serif;
-    font-family: 'Vollkorn SC', serif;
+font-family: 'Jura', sans-serif;
+font-family: 'Sofia Sans', sans-serif;
+font-family: 'Vollkorn SC', serif;
 */
 
 * {
@@ -33,8 +33,9 @@ img {
 }
 
 .container {
+    width: 100%;
     max-width: 1200px;
-    margin:auto;
+    margin: auto;
     padding: 30px;
 }
 

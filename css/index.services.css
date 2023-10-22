@@ -1,53 +1,67 @@
-.services-carousel-container {
-    overflow: hidden;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  
-  .services-carousel {
-    flex: 8;
-    list-style: none;
-    display: flex;
-    transition: transform 0.3s ease-in-out;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .services-carousel-item {
-    flex: 0 0 calc(100% - 10px);
-    margin-right: 10px; 
-    text-align: center;
-    /*display: flex;
-    justify-content: center;
-    align-items: center;*/
-  }
+#services h2 {
+  padding: 20px;
+}
 
-  /*.services-carousel-item div {
-    text-align: center;
-    width: 80%;
-    display: block;
-    border: 2px solid var(--text-color);
-  }*/
-  
-  .services-carousel-nav {
-    margin-top: 10px; 
-    text-align: center;
-  }
-  
-  .prev-button,
-  .next-button {
-    padding: 5px 10px;
-    background-color: inherit; 
-    color:var(--text-color); 
-    border: none;
-    cursor: pointer;
-    flex: 1;
-  }
-  
-  .prev-button:hover,
-  .next-button:hover {
-    background-color: #555; 
-  }
-  
+.services-carousel-container {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.services-carousel {
+  width: 90%;
+  list-style: none;
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+  padding: 0;
+  margin: 0;
+  z-index: 2;
+}
+
+.services-carousel-item {
+  flex: 0 0 100%;
+  min-width: 200px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services-carousel-item h3,
+.services-carousel-item p {
+  padding: 5px 20px;
+}
+
+.services-carousel-item a {
+  /*position: absolute;*/
+  border: 2px solid var(--text-color);
+  color: var(--text-color);
+  padding: 0.75rem;
+  /*bottom: 20px;*/
+  margin: 10px auto;
+}
+
+.services-carousel-item a:hover {
+  border: 2px solid var(--color-warm);
+  color: var(--color-warm);
+}
+
+.prev-button,
+.next-button {
+  width: 5%;
+  background-color: inherit;
+  color: var(--text-color);
+  border: none;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.prev-button:hover,
+.next-button:hover {
+  color: var(--color-warm);
+}
