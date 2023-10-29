@@ -20,7 +20,7 @@
     display: flex;
     flex-direction: column;
     max-width: 100%;
-    margin: 50px auto;
+    margin: 70px auto auto auto;
 }
   
 .navigation_content a,
@@ -28,8 +28,8 @@
 .social_media i {
     font-size: 22px;
     color: var(--text-color);
-    padding: 15px;
-    margin: auto;
+    padding: 10px;
+    
 }
   
 .navigation_content a:hover {
@@ -141,7 +141,8 @@ nav .navigation_burger.active::after {
     .social_media {
       min-width: 150px;
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
+      align-items: center;
     }
 }
   

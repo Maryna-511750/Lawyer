@@ -1,5 +1,4 @@
-.contacts-form,
-.contacts-text {
+.contacts-form {
   margin: 24px;
   text-align: left;
 }
@@ -21,6 +20,7 @@
   border: none;
   border-bottom: 2px solid var(--text-color);
   background-color: inherit;
+  color: var(--text-color);
 }
 
 .contacts-form input[type=text]:valid,

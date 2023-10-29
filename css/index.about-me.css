@@ -13,10 +13,6 @@
     object-fit: cover;
 }
 
-.about-me-text {
-    padding: 30px;
-}
-
 @media (min-width: 774px) {
     .about-me-content {
         display: flex;
@@ -29,6 +25,7 @@
     }
     .about-me-text {
         flex: 1;
+        padding: 30px;
     }
 }
 

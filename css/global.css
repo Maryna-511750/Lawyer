@@ -68,3 +68,12 @@ button {
     height: 100%;
     z-index: -1; 
 }  
+
+@media (min-width: 774px) {
+    #about-me,
+    #contacts,
+    #cases,
+    #footer {
+        padding: 30px;
+    }
+}
