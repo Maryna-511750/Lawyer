@@ -54,7 +54,7 @@ function renderCases (cases, itemId) {
 function eventCases (){
   const casesItem = document.querySelectorAll(".cases-item");
   casesItem.forEach((caseItem) => {
-    caseItem.addEventListener("mouseover", (_) => {
+    caseItem.addEventListener("click", (_) => {
       renderCases(cases, caseItem.id);
     });
   });
