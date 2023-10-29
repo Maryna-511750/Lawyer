@@ -1,5 +1,6 @@
-document.addEventListener('partialsLoaded', async () => {
-    await import('./nav.js');
-    await import('./services.js');
-    await import('./cases.js');
+document.addEventListener('partialsLoaded', () => {
+    import('./nav.js');
+    import('./services.js');
+    import('./cases.js');
+    import('./background.js');
 });

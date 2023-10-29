@@ -14,7 +14,7 @@ font-family: 'Vollkorn SC', serif;
 :root {
     --text-color: rgb(255, 255, 255);
     --text-color-alternative: rgb(225, 221, 232);
-    --background-color: black;
+    --background-color: #000;
     --background-color-violet: rgb(50, 38, 75);
     --color-warm: pink;
     --font-jura: 'Jura', sans-serif;
@@ -59,3 +59,12 @@ button {
     flex-direction: column;
     justify-content: center;
 }
+
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+}  

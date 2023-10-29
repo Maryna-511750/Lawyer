@@ -3,33 +3,28 @@
 }
 
 .services-carousel-container {
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  min-height: 350px;
+  display: grid;
+  grid-template-columns: 40px 1fr 40px;
+  align-items: center;
 }
 
-.services-carousel {
-  width: 90%;
-  list-style: none;
+.services-carousel-slide {
   display: flex;
-  transition: transform 0.3s ease-in-out;
-  padding: 0;
-  margin: 0;
-  z-index: 2;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .services-carousel-item {
-  flex: 0 0 100%;
-  min-width: 200px;
+  max-width: 350px;
   text-align: center;
-  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-content: space-between;
+}
+
+.services-carousel-item div {
+  height: 474px;
 }
 
 .services-carousel-item h3,
@@ -38,12 +33,11 @@
 }
 
 .services-carousel-item a {
-  /*position: absolute;*/
   border: 2px solid var(--text-color);
   color: var(--text-color);
   padding: 0.75rem;
-  /*bottom: 20px;*/
   margin: 10px auto;
+  bottom: 5px;
 }
 
 .services-carousel-item a:hover {
@@ -53,15 +47,45 @@
 
 .prev-button,
 .next-button {
-  width: 5%;
   background-color: inherit;
   color: var(--text-color);
   border: none;
   cursor: pointer;
-  z-index: 3;
 }
 
 .prev-button:hover,
 .next-button:hover {
   color: var(--color-warm);
+}
+
+@media (min-width: 381px) {
+  .services-carousel-item div {
+    height: 420px;
+  }
+}
+@media (min-width: 480px) {
+  .services-carousel-item div {
+    height: 280px;
+  }
+}
+@media (min-width: 768px) {
+  .services-carousel-item div {
+    height: 290px;
+  }
+}
+@media (min-width: 840px) {
+  .services-carousel-item div {
+    height: 270px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .services-carousel-item div {
+    height: 290px;
+  }
+}
+@media (min-width: 1214px) {
+  .services-carousel-item div {
+    height: 270px;
+  }
 }
