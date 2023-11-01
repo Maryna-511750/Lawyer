@@ -27,3 +27,21 @@ function handleSubmit(event) {
     });
 }
 form.addEventListener("submit", handleSubmit)
+
+
+function isMobileDevice() {
+    return /Mobi|Android/i.test(navigator.userAgent);
+}
+
+
+if (isMobileDevice()) {
+    document.querySelector('a[href^="tel:"]').addEventListener('click', function(e) {
+        e.preventDefault(); // Зупиняємо перехід за посиланням
+        var phoneNumber = this.getAttribute('href').replace('tel:', '');
+        window.location.href = 'tel:' + phoneNumber;
+    });
+}else {
+    document.querySelector('a[href^="tel:"]').addEventListener('click', function(e) {
+        e.preventDefault(); 
+    });
+}
