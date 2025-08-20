@@ -1,0 +1,23 @@
+#cases {
+    padding: 18px;
+}
+
+.cases-content {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    background-color: inherit;
+    padding: 10px;
+}
+
+.cases-item-big {
+    grid-column: 1 / span 2;
+}
+
+.cases-item .cases-paragraph-hidden {
+    display: none;
+}
+
+.cases-item-big .cases-paragraph-hidden {
+    display: block;
+}

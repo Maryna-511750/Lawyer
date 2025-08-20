@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@600&family=Sofia+Sans:wght@200&family=Vollkorn+SC&display=swap');
+/*
+font-family: 'Jura', sans-serif;
+font-family: 'Sofia Sans', sans-serif;
+font-family: 'Vollkorn SC', serif;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-color: rgb(255, 255, 255);
+    --text-color-alternative: rgb(225, 221, 232);
+    --background-color: #000;
+    --background-color-violet: rgb(50, 38, 75);
+    --color-warm: pink;
+    --font-jura: 'Jura', sans-serif;
+    --font-sofia: 'Sofia Sans', sans-serif;
+    --font-vollkorn: 'Vollkorn SC', serif;
+    scroll-behavior: smooth;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--font-vollkorn);
+}
+
+img {
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px;
+}
+
+a,
+p a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+h2,
+h3,
+a,
+button {
+    font-family: var(--font-sofia);
+    text-align: center;
+}
+
+#about-me,
+#contacts,
+#cases,
+#footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+}  
+
+@media (min-width: 774px) {
+    #about-me,
+    #contacts,
+    #cases,
+    #footer {
+        padding: 30px;
+    }
+}

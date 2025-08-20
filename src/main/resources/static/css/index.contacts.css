@@ -1,0 +1,63 @@
+.contacts-form {
+  margin: 24px;
+  text-align: left;
+}
+
+.contacts-text p,
+.contacts-text h2,
+.contacts-text h3 {
+  margin-bottom: 18px;
+}
+
+.contacts-form input[type=text],
+.contacts-form input[type=tel],
+.contacts-form input[type=email],
+.contacts-form textarea {
+  width: 100%;
+  padding: 12px;
+  resize: vertical;
+  margin-bottom: 24px;
+  border: none;
+  border-bottom: 2px solid var(--text-color);
+  background-color: inherit;
+  color: var(--text-color);
+}
+
+.contacts-form input[type=text]:valid,
+.contacts-form input[type=tel]:valid,
+.contacts-form input[type=email]:valid,
+.contacts-form textarea:valid {
+  border: none;
+  border-bottom: 2px solid var(--color-warm);
+  background-color: inherit;
+  color: var(--text-color);
+}
+
+.contacts-form input[type=submit] {
+  background-color: inherit;
+  font-family: var(--font-sofia);
+  position: relative;
+  border: 2px solid var(--text-color);
+  color: var(--text-color);
+  padding: 0.75rem;
+}
+
+.contacts-form input[type=submit]:hover {
+  border: 2px solid var(--color-warm);
+  color: var(--color-warm);
+}
+
+@media (min-width: 774px) {
+  #contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .contacts-form {
+    flex: 1;
+  }
+  .contacts-text {
+    flex: 1;
+  }
+}

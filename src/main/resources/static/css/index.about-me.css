@@ -1,0 +1,39 @@
+#about-me h2 {
+    margin: 20px auto;
+}
+
+.about-me-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+.about-me-photo img {
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (min-width: 774px) {
+    .about-me-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .about-me-photo {
+        flex: 1;
+    }
+    .about-me-text {
+        flex: 1;
+        padding: 30px;
+    }
+}
+
+@media (min-width: 991px) {
+    .about-me-photo {
+        flex: 1;
+    }
+    .about-me-text {
+        flex: 2;
+    }
+}

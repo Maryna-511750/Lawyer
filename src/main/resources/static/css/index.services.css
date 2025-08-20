@@ -1,0 +1,91 @@
+#services h2 {
+  padding: 20px;
+}
+
+.services-carousel-container {
+  min-height: 350px;
+  display: grid;
+  grid-template-columns: 40px 1fr 40px;
+  align-items: center;
+}
+
+.services-carousel-slide {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.services-carousel-item {
+  max-width: 350px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.services-carousel-item div {
+  height: 474px;
+}
+
+.services-carousel-item h3,
+.services-carousel-item p {
+  padding: 5px 20px;
+}
+
+.services-carousel-item a {
+  border: 2px solid var(--text-color);
+  color: var(--text-color);
+  padding: 0.75rem;
+  margin: 10px auto;
+  bottom: 5px;
+}
+
+.services-carousel-item a:hover {
+  border: 2px solid var(--color-warm);
+  color: var(--color-warm);
+}
+
+.prev-button,
+.next-button {
+  background-color: inherit;
+  color: var(--text-color);
+  border: none;
+  cursor: pointer;
+}
+
+.prev-button:hover,
+.next-button:hover {
+  color: var(--color-warm);
+}
+
+@media (min-width: 381px) {
+  .services-carousel-item div {
+    height: 420px;
+  }
+}
+@media (min-width: 480px) {
+  .services-carousel-item div {
+    height: 280px;
+  }
+}
+@media (min-width: 768px) {
+  .services-carousel-item div {
+    height: 290px;
+  }
+}
+@media (min-width: 840px) {
+  .services-carousel-item div {
+    height: 270px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .services-carousel-item div {
+    height: 290px;
+  }
+}
+@media (min-width: 1214px) {
+  .services-carousel-item div {
+    height: 270px;
+  }
+}
