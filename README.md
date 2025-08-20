@@ -1,8 +1,29 @@
-# HTML Template Repository with HTML Proofer
+# Lawyer Client Website
 
-This template repository includes preconfigured GitHub Action that will validate html files in a project with (HTMLProofer)[https://github.com/gjtorikian/html-proofer/].
+A professional business card website for a lawyer, with both frontend and backend implementations.
 
-Validation is performed with dynamic pre-rendering of html files so it will allow to construct them with JavaScript on the fly.
+## Branches
 
-HTML files with 'partial.html' suffix will be ignored, so validator is compatible with dynamic construction of website with html includes like (HTML Data Include)[https://github.com/programmingmentor/html-data-include].
+- **main**  
+  Frontend template: HTML, CSS, and JS for the website interface.
 
+- **lawyer-client-spring**  
+  Spring Boot backend for the site, featuring:
+  - Java 21
+  - Spring Boot & REST API
+  - Spring Security with JWT authentication
+  - JPA / Hibernate for database access
+  - Maven for dependency management
+  - Well-structured Controllers, Services, Repositories, DTOs, and Exception handling
+
+- **lawyer-mvp-spring**  
+  Alternative Spring Boot backend with the same tech stack as above, serving the same website.
+
+## Technologies
+
+- Java 21  
+- Spring Boot  
+- Spring Security + JWT  
+- Maven  
+- Hibernate / JPA  
+- HTML, CSS, JavaScript (frontend in `main` branch)
